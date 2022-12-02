@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="MainHeading">Etch-A-Sketch</div>
+    <div class="Container">
+      <div class="Menu">
+        <div class="MenuHeading">Menu</div>
+        <div class="ColorPicker">
+          <div class="BrushColor">
+            Brush Color
+            <input type="color" name="black" id="BrushColor" value="#000000" />
+          </div>
+          <div class="BGcolor">
+            Background Color
+            <input type="color" name="black" id="BGColor" value="#FFFFFF" />
+          </div>
+        </div>
+        <button class="BrushBtn">Paint</button>
+        <button class="EraserBtn">Eraser</button>
+        <button class="ClearBtn">Clear</button>
+        <div id="SizeValue" class="Size-Value Hidden">16 x 16</div>
+        <input
+          id="SizeSlider"
+          class="Hidden"
+          type="range"
+          value="16"
+          min="1"
+          max="64"
+        />
+      </div>
+      <div class="Grid"></div>
+    </div>
+  </body>
+</html>

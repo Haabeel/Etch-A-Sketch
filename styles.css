@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+body {
+  background-color: rgb(155, 184, 210);
+}
+.MainHeading {
+  display: flex;
+  font-size: 75px;
+  font-family: "Nerko One", cursive;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  text-shadow: 3px 2px 2px rgb(255, 255, 255);
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.Menu {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 300px;
+  background-color: rgb(89, 138, 141);
+  align-items: center;
+  gap: 10px;
+  box-shadow: 3px 3px 3px rgb(16, 20, 24);
+}
+
+.MenuHeading {
+  margin: 10px;
+  font-size: 40px;
+  font-family: "Nerko One", cursive;
+  align-items: center;
+}
+
+.Grid {
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  height: 500px;
+  width: 500px;
+  box-shadow: 3px 3px 3px rgb(16, 20, 24);
+}
+
+.ColorPicker {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BrushColor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-family: "Nerko One", cursive;
+}
+
+.BGcolor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-family: "Nerko One", cursive;
+}
+
+input[type="color"]:hover {
+  transform: scale(1.05);
+}
+
+input[type="color"]:active {
+  transition: transform 0.05s ease-in-out;
+  transform: scale(1);
+}
+
+input[type="color"] {
+  margin: 10px;
+  -webkit-appearance: none;
+  width: 60px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.EraserBtn,
+.ClearBtn,
+.BrushBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 1rem;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+  background: none;
+  cursor: pointer;
+  border-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+  width: max-content;
+  height: max-content;
+}
+
+.EraserBtn:hover {
+  background-color: #4f5761;
+}
+
+.ClearBtn:hover {
+  background-color: red;
+}
+
+.BrushBtn:hover {
+  background-color: khaki;
+  color: black;
+}
+.Size-Value {
+  font-size: 30px;
+  font-family: "Nerko One";
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background-color: whitesmoke;
+  cursor: pointer;
+  width: 150px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 10px;
+  border: 1px solid none;
+  border-radius: 24px;
+  background: rgb(255, 245, 245);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 25px;
+  margin-top: -8px;
+  background: black;
+}
+
+.ACTIVE {
+  background-color: red;
+}
+
+.PaintMode {
+  background-color: khaki;
+  color: black;
+}
+
+.Hidden {
+  display: none;
+}
